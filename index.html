@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toyota Brasil</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  <!-- SEO -->
+  <meta name="description" content="Site oficial da Toyota no Brasil. Conheça os modelos, história e entre em contato conosco.">
+  <meta name="keywords" content="Toyota, carros, híbridos, modelos Toyota, Corolla, Hilux, Yaris, concessionária Toyota">
+  <meta name="author" content="Toyota do Brasil">
+  <meta name="robots" content="index, follow">
+
+  <!-- Estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+        <a class="navbar-brand" href="#">Toyota</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+ </nav>
+    
+
+  <!-- Sobre -->
+  <section id="sobre" class="section bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="mb-4">Sobre a Toyota</h2>
+      <p>A Toyota Motor Corporation, ou simplesmente Toyota, figura como uma das maiores e mais influentes montadoras de veículos em escala global. Sua trajetória teve início no Japão, em 1937, sob a visão de Kiichiro Toyoda, emergindo como uma ramificação da Toyoda Automatic Loom Works, empresa de teares automáticos fundada por seu pai, Sakichi Toyoda. A expertise em manufatura industrial, aliada ao princípio do "Jidoka" – uma automação que interrompe o processo ao identificar um problema, lançou as bases para o desenvolvimento do revolucionário Sistema de Produção Toyota.
+        Após o término da Segunda Guerra Mundial, a Toyota direcionou seus esforços para a fabricação de automóveis, experimentando uma rápida expansão tanto no mercado doméstico japonês quanto no cenário internacional. A empresa estabeleceu operações em diversos países, marcando sua entrada nos Estados Unidos na década de 1950 e se tornando uma das pioneiras montadoras japonesas a conquistar o mercado americano.
+        Um dos pilares do sucesso da Toyota reside em seu Sistema de Produção Toyota (TPS), amplamente reconhecido por sua eficiência, foco na eliminação de desperdícios (Lean Manufacturing) e a constante busca por melhorias (Kaizen). O TPS não apenas transformou a indústria automotiva, mas também serviu de inspiração para inúmeros outros setores.
+        A Toyota consolidou uma reputação inabalável na produção de veículos que primam pela alta qualidade, durabilidade e confiabilidade. Essa imagem contribuiu de forma significativa para a sua ampla aceitação e sucesso em mercados por todo o mundo.
+        A empresa também se destaca por sua capacidade de inovação, sendo pioneira na tecnologia híbrida com o lançamento do Prius em 1997, um marco na história da indústria automotiva. A Toyota mantém um forte investimento em pesquisa e desenvolvimento de novas tecnologias, explorando o potencial de veículos elétricos e sistemas de condução autônoma.
+        Com uma presença global abrangente, a Toyota opera fábricas e mantém atividades comerciais em mais de 160 nações, figurando entre as maiores montadoras em volume de vendas em nível mundial. No Brasil, a Toyota possui diversas unidades de produção e uma expressiva participação no mercado automotivo nacional.
+        A filosofia da Toyota se fundamenta no respeito pelas pessoas e pelo meio ambiente, buscando ativamente contribuir para uma sociedade mais próspera através da fabricação de automóveis.Em suma, a Toyota é uma gigante da indústria automotiva global, notável por sua rica história de inovação, seu eficiente sistema de produção, a qualidade e confiabilidade de seus veículos e seu compromisso contínuo com o futuro da mobilidade.</p>
+    </div>
+  </section>
+
+  <!-- Modelos -->
+  <section id="modelos" class="section text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="mb-4">Modelos Populares</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/img/Toyota_Corolla.png" class="card-img-top img-fluid" alt="Toyota Corolla"
+                 data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="ampliarImagem(this.src)">
+            <div class="card-body">
+              <h5 class="card-title">Corolla</h5>
+              <p class="card-text">O Toyota Corolla é sinônimo de confiabilidade e tecnologia híbrida.</p>
+              <p class="fw-bold text-success">A partir de R$ 159.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/img/Toyota_Hilux.png" class="card-img-top img-fluid" alt="Toyota Hilux"
+                 data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="ampliarImagem(this.src)">
+            <div class="card-body">
+              <h5 class="card-title">Hilux</h5>
+              <p class="card-text">A Hilux combina força, tecnologia e robustez para qualquer terreno.</p>
+              <p class="fw-bold text-success">A partir de R$ 350.000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/img/Toyota_Yaris.png" class="card-img-top img-fluid" alt="Toyota Yaris"
+                 data-bs-toggle="modal" data-bs-target="#imagemModal" onclick="ampliarImagem(this.src)">
+            <div class="card-body">
+              <h5 class="card-title">Yaris</h5>
+              <p class="card-text">O Yaris oferece conforto urbano com excelente eficiência.</p>
+              <p class="fw-bold text-success">A partir de R$ 99.000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-danger mt-4" onclick="mostrarMensagem()">Saiba mais</button>
+    </div>
+  </section>
+
+  <!-- Modal para imagem ampliada -->
+  <div class="modal fade" id="imagemModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-body p-0">
+          <img src="" id="imagemAmpliada" class="img-fluid w-100" alt="Imagem ampliada">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contato -->
+  <section id="contato" class="section bg-light text-center" data-aos="fade-up">
+    <div class="container">
+      <h2 class="mb-3">Fale Conosco</h2>
+      <form class="row g-3 justify-content-center">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nome completo" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="E-mail" required>
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" rows="4" placeholder="Mensagem" required></textarea>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-danger">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="btnTopo" class="btn btn-danger" style="position: fixed; bottom: 20px; right: 20px; display: none; z-index: 999;">
+    ↑ Topo
+  </button>
+
+  <!-- Rodapé -->
+  <footer class="text-center mt-5 py-4 bg-dark text-white">
+    <p class="mb-0">&copy; 2025 Toyota do Brasil. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
